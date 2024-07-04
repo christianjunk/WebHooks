@@ -4,10 +4,11 @@
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <RootNamespace>Microsoft.AspNetCore.WebHooks</RootNamespace>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Internal.AspNetCore.Sdk" PrivateAssets="All" Version="$(InternalAspNetCoreSdkPackageVersion)" />
-  </ItemGroup>
+<ItemGroup>
+  <FrameworkReference Include="Microsoft.AspNetCore.App" Version="$(MicrosoftAspNetCoreSdkPackageVersion)" />
+</ItemGroup>
+
 </Project>

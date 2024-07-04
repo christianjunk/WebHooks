@@ -37,7 +37,7 @@ namespace Microsoft.Extensions.DependencyInjection
             PusherServiceCollectionSetup.AddPusherServices(builder.Services);
 
             return builder
-                .AddJsonFormatters()
+                .AddNewtonsoftJson()
                 .AddWebHooks();
         }
     }

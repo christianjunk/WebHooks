@@ -38,7 +38,7 @@ namespace Microsoft.Extensions.DependencyInjection
             DynamicsCRMServiceCollectionSetup.AddDynamicsCRMServices(builder.Services);
 
             return builder
-                .AddJsonFormatters()
+                .AddNewtonsoftJson()
                 .AddWebHooks();
         }
     }

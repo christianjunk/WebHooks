@@ -36,7 +36,7 @@ namespace Microsoft.Extensions.DependencyInjection
             GitHubServiceCollectionSetup.AddGitHubServices(builder.Services);
 
             return builder
-                .AddJsonFormatters()
+                .AddNewtonsoftJson()
                 .AddWebHooks();
         }
     }

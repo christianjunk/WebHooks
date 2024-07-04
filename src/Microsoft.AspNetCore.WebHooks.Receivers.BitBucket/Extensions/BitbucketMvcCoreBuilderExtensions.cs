@@ -37,7 +37,7 @@ namespace Microsoft.Extensions.DependencyInjection
             BitbucketServiceCollectionSetup.AddBitbucketServices(builder.Services);
 
             return builder
-                .AddJsonFormatters()
+                .AddNewtonsoftJson()
                 .AddWebHooks();
         }
     }

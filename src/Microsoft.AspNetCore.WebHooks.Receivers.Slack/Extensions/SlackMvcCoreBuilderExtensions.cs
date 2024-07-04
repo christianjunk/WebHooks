@@ -38,7 +38,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
             // While requests contain HTML form URL-encoded data, responses are JSON.
             return builder
-                .AddJsonFormatters()
+                .AddNewtonsoftJson()
                 .AddWebHooks();
         }
     }

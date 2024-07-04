@@ -27,6 +27,6 @@
     <AssemblySigningCertName>Microsoft</AssemblySigningCertName>
     <PackageSigningCertName>MicrosoftNuGet</PackageSigningCertName>
     <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
 </Project>

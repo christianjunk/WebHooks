@@ -38,7 +38,7 @@ namespace Microsoft.Extensions.DependencyInjection
             TrelloServiceCollectionSetup.AddTrelloServices(builder.Services);
 
             return builder
-                .AddJsonFormatters()
+                .AddNewtonsoftJson()
                 .AddWebHooks();
         }
     }

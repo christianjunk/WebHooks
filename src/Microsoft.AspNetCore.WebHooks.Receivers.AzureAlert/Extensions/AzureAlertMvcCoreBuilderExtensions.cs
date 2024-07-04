@@ -38,7 +38,7 @@ namespace Microsoft.Extensions.DependencyInjection
             AzureAlertServiceCollectionSetup.AddAzureAlertServices(builder.Services);
 
             return builder
-                .AddJsonFormatters()
+                .AddNewtonsoftJson()
                 .AddWebHooks();
         }
     }

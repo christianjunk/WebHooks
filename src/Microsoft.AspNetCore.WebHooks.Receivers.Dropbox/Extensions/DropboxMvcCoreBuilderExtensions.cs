@@ -37,7 +37,7 @@ namespace Microsoft.Extensions.DependencyInjection
             DropboxServiceCollectionSetup.AddDropboxServices(builder.Services);
 
             return builder
-                .AddJsonFormatters()
+                .AddNewtonsoftJson()
                 .AddWebHooks();
         }
     }

@@ -37,7 +37,7 @@ namespace Microsoft.Extensions.DependencyInjection
             KuduServiceCollectionSetup.AddKuduServices(builder.Services);
 
             return builder
-                .AddJsonFormatters()
+                .AddNewtonsoftJson()
                 .AddWebHooks();
         }
     }

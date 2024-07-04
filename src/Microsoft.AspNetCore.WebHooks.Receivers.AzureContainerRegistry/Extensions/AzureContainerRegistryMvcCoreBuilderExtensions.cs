@@ -36,7 +36,7 @@ namespace Microsoft.Extensions.DependencyInjection
             AzureContainerRegistryServiceCollectionSetup.AddAzureContainerRegistryServices(builder.Services);
 
             return builder
-                .AddJsonFormatters()
+                .AddNewtonsoftJson()
                 .AddWebHooks();
         }
     }

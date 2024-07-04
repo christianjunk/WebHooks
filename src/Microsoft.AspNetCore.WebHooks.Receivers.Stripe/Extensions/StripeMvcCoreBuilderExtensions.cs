@@ -40,7 +40,7 @@ namespace Microsoft.Extensions.DependencyInjection
             StripeServiceCollectionSetup.AddStripeServices(builder.Services);
 
             return builder
-                .AddJsonFormatters()
+                .AddNewtonsoftJson()
                 .AddWebHooks();
         }
     }
